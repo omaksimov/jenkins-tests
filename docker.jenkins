@@ -32,9 +32,9 @@ pipeline {
         stage("docker push") {
             steps {
                 echo " ============== start pushing image =================="
-                sh '''
+                sh """
                 docker push omaximov/ts-alpine:latest
-                '''
+                """
             }
         }
     }
