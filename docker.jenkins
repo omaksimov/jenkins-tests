@@ -28,7 +28,6 @@ pipeline {
                 sh 'docker build -t omaximov/ts-alpine:latest . '
                 }
             }
-        }
         stage("docker push") {
             steps {
                 echo " ============== start pushing image =================="
